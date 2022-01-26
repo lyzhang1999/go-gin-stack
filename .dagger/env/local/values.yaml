@@ -1,0 +1,32 @@
+plan:
+    package: ./h8r
+name: local
+inputs:
+    accessToken:
+        secret: ENC[AES256_GCM,data:KpUKbTGRDJdLFYz7tHvne1SNIADoFcZoTTOqkQx3SHV5Z5HqLJ9eLQ==,iv:Rtg5cHtr8eC1+fqIWXaF+KysIQjY8hLDGQNmBMGINaU=,tag:YWjawDXu97L6g4uSm6GoSA==,type:str]
+    createRepo.accessToken:
+        secret: ENC[AES256_GCM,data:6FNkRzwnkHAEbXbGPngl/iu0uU4DWSdoNJm3qK1BSMHRRDuwnaBz9Q==,iv:oslz6W/o5HcHm+O/FVhx6tYeRSZZ9CE0etXsjr1tkuc=,tag:K9zZ7zrFwe94FSn9l4d4Xg==,type:str]
+    createRepo.repoName:
+        text: orders
+    repoName:
+        text: orders
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age:
+        - recipient: age14q92qu5s0lrh4ede6rfwyu4wpc69gl753er5yw4jt27euear2yfscfdtz3
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBsOVRkV3FxUDhqY3J3UmFD
+            cHZNaWhBRi9OZm9FbW5tMXo0WXBPS1c0WEJVCmhmdGluRkZPL096VUFNR0dJOUNJ
+            d0lJSWVjWGxvQ0JWWDBpYmVOOUJ3WlkKLS0tIEFXWWVCcGFRZzE4UUF5STQzT2xU
+            L0xNSFpxZE9PUHUrbURDK2lvWTJvY1kKDTG3vrK/9tzHlT9MzRUolkpuCMGGKjn0
+            2nKfcx6qxErJab+VQJ+IjAyOkfLn1/F5cfiW9CscEyEJGoXvkNdaYA==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2022-01-26T10:18:46Z"
+    mac: ENC[AES256_GCM,data:QRC1J3/2156Z/Qors3OKHAU1uFlkeX8Xl4GbybNqYmN+Aq56Z7SL8AmixVo6/sa8ZRKAyUPL8SORBwbgazofh/zORs3hroP8XP8OxuL3coSfkmIYFgTdFJBSdI1gh9R5Y70c16Npqtq0GPNNPBrneHcTG62Z83kHeEuZevHMpik=,iv:Ugg6l8VhMsOjrXtrUx2Q5mZYmsRpOTwcQK6UgYG18uo=,tag:8N/+WDEm0hZuN/4eqPUUwg==,type:str]
+    pgp: []
+    encrypted_suffix: secret
+    version: 3.7.1
