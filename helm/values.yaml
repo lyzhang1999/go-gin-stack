@@ -38,7 +38,7 @@ securityContext: {}
 
 service:
   type: ClusterIP
-  port: 80
+  port: 8000
 
 ingress:
   enabled: false
@@ -80,3 +80,15 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+mariadb:
+  commonAnnotations: {"helm.sh/hook": "pre-install", "helm.sh/hook-weight": "-2"}
+  auth:
+    rootPassword: root
+  primary:
+    persistence:
+      enabled: false
+
+redis:
+  auth:
+    password: root
