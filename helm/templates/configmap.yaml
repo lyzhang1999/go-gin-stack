@@ -36,12 +36,12 @@ data:
     Type = mysql
     User = root
     Password = root
-    Host = {{ .Chart.Name }}-mariadb:3306
+    Host = {{ .Release.Name }}-mariadb:3306
     Name = blog
     TablePrefix = blog_
 
     [redis]
-    Host = {{ .Chart.Name }}-redis-master:6379
+    Host = {{ .Release.Name }}-redis-master:6379
     Password = root
     MaxIdle = 30
     MaxActive = 30
