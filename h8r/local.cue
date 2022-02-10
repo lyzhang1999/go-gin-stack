@@ -9,3 +9,7 @@ createRepo: git.#Create & {
   repoName: dagger.#Input
 }
 
+//cluster: tencent.#Tke & {
+//  secretId: dagger.#Input
+//  secretKey: dagger.#Secret
+//}

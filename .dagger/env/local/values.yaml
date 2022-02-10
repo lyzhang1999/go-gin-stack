@@ -4,6 +4,14 @@ name: local
 inputs:
     accessToken:
         secret: ENC[AES256_GCM,data:KpUKbTGRDJdLFYz7tHvne1SNIADoFcZoTTOqkQx3SHV5Z5HqLJ9eLQ==,iv:Rtg5cHtr8eC1+fqIWXaF+KysIQjY8hLDGQNmBMGINaU=,tag:YWjawDXu97L6g4uSm6GoSA==,type:str]
+    account.secretId:
+        text: AKIDmp7BgxMmJbeT4RSp1A6nFTSDk2LWRDoE
+    account.secretKey:
+        secret: ENC[AES256_GCM,data:2c/J02qxbXutMULobKBmOmLpoWYmO59tY05V3gdngMI=,iv:d/9sZ/id6uzpO5Gf/GoDBPJebzJaqmBtygzX0rhUNXE=,tag:iOvjY0pe70xUbUgT7mRGRg==,type:str]
+    cluster.secretId:
+        text: AKIDmp7BgxMmJbeT4RSp1A6nFTSDk2LWRDoE
+    cluster.secretKey:
+        secret: ENC[AES256_GCM,data:dkwwqedkoqWsYm3wJeZuqvF6IsCfSkNSmGIz3kun1ng=,iv:t1wz1OGc8qvsgdf4ehQ6i+iwo0hsrKvwUJw1tZOwXqQ=,tag:gWxsNjzwnH2bvwl0cEZtYg==,type:str]
     createRepo.accessToken:
         secret: ENC[AES256_GCM,data:6FNkRzwnkHAEbXbGPngl/iu0uU4DWSdoNJm3qK1BSMHRRDuwnaBz9Q==,iv:oslz6W/o5HcHm+O/FVhx6tYeRSZZ9CE0etXsjr1tkuc=,tag:K9zZ7zrFwe94FSn9l4d4Xg==,type:str]
     createRepo.repoName:
@@ -25,8 +33,8 @@ sops:
             L0xNSFpxZE9PUHUrbURDK2lvWTJvY1kKDTG3vrK/9tzHlT9MzRUolkpuCMGGKjn0
             2nKfcx6qxErJab+VQJ+IjAyOkfLn1/F5cfiW9CscEyEJGoXvkNdaYA==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2022-01-26T10:18:46Z"
-    mac: ENC[AES256_GCM,data:QRC1J3/2156Z/Qors3OKHAU1uFlkeX8Xl4GbybNqYmN+Aq56Z7SL8AmixVo6/sa8ZRKAyUPL8SORBwbgazofh/zORs3hroP8XP8OxuL3coSfkmIYFgTdFJBSdI1gh9R5Y70c16Npqtq0GPNNPBrneHcTG62Z83kHeEuZevHMpik=,iv:Ugg6l8VhMsOjrXtrUx2Q5mZYmsRpOTwcQK6UgYG18uo=,tag:8N/+WDEm0hZuN/4eqPUUwg==,type:str]
+    lastmodified: "2022-02-10T05:07:54Z"
+    mac: ENC[AES256_GCM,data:9daiKXYRdZEjAkCyRXD0rHF4N+66xmBHbH09VkMFbKxsR4GlcGpRHU8HSeRwDA5XbUyZF4KbTt24xuVKWQ2LKx5G3GmnXibcXBJQHn8yHKyagyJeMpZjfvoX1p8P5umjJ0qMw+8W44xb83OM/FOC/+o6iRV7KVBNFLQmj5dF1j0=,iv:1u0VvmXov9oZ1jrnlU+EeYwYOcPJ79ENARln23dtrSo=,tag:Q6MomVF8OpHr7GOqb9M6eg==,type:str]
     pgp: []
     encrypted_suffix: secret
     version: 3.7.1
