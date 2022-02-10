@@ -88,7 +88,12 @@ mariadb:
   primary:
     persistence:
       enabled: false
+  initdbScripts:
+    createdb.sql: |-
+      {{ .Files.Get "sql/db.sql" | indent 4 }}
 
 redis:
+  replica:
+    replicaCount: 1
   auth:
     password: root
