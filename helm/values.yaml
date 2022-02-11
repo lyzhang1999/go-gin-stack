@@ -149,3 +149,9 @@ redis:
     replicaCount: 1
   auth:
     password: root
+  master:
+    persistence:
+      enabled: false
+  replica:
+    persistence:
+      enabled: false
