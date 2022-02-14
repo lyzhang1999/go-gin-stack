@@ -20,4 +20,5 @@ helm: tencent.#Helm & {
   helmPath: "helm"
   repoUrl: createRepo.create
   kubeconfig: cluster.references
+  namespace: "h8r"
 }
